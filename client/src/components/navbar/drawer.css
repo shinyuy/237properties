@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.drawer-links {
+    padding: 0 30px;
+   /* border-right: 2px solid white;  */
+   display: flex;
+   flex-direction: column;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#signup {
+    border: 1px solid #c69963;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    background-color:  #101d2c;
+    white-space: nowrap;
+}
+ #signup:hover, #login:hover{
+     cursor: pointer;
+ }
+
+ #login {
+    border: 1px solid #c69963;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    background-color:  #c69963;
+    white-space: nowrap;
+}

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+.nav {
+    display: flex; 
+  justify-content: center;
+  padding: 0px 2%;
+  height: 60px;
+  font-family: 'Raleway', sans-serif;
+  width: 100%;
+}
+
+.toolbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+    border-right: 2px solid #c3c3c3;
+    width: 100px; 
+    height: 60px;
+    color: #c69963;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo img {
+    width: 90%;
+    height: 50%;
+}
+
+.links {
+    display: flex;
+}
+
+.links span {
+    margin: 0 .9vw;
+}
+
+.link {
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login button {
+    border: 0;
+    color: #c69963;
+    background-color: #21212b;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+}
+
+#signup {
+    border: 1px solid #c69963;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    background-color:  #101d2c;
+    white-space: nowrap;
+}
+ #signup:hover, #login:hover{
+     cursor: pointer;
+ }
+
+ #login {
+    border: 1px solid #c69963;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    background-color:  #c69963;
+    white-space: nowrap;
+}
+
+ .side-drawer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Media Queries /////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        width: 100px;
+    }
+    .logo img {
+        width: 60px;
+    } 
+
+    .nav {
+        display: flex; 
+      justify-content: space-evenly;
+      padding:  0;
+      width: 100vmax;
+      }
+
+      .login {
+        display: flex;
+       /* margin-left: 60%;  */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.nav {
+    display: flex; 
+  justify-content: space-between;
+  width: 100vmax;
+  padding: 0;
+  }
+
+  .logo{
+      padding: 0;
+      border: 0;
+  }
+
+  .links ul {
+   display: block;
+}
+
+.links li {
+    font-size: 20px;
+}
+
+.login {
+    display: flex;
+  /*  margin-left: 20%;  */
+    font-size: 20px;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+}
